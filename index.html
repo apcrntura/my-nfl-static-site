@@ -1,10 +1,15 @@
 <script type="text/javascript">
-!function(T,l,y){var
-S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionT
-racking",E="ai.device.",...}(window,document,{
- src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js",
- cfg: {
- connectionString: "InstrumentationKey=94457f19-a7c8-42cf-8c41-263f27114faf;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=317b0f5e-83dd-44d0-8fe2-90c9205e5e8a"
- }});
-window.appInsights.trackPageView();
+  var appInsights=window.appInsights||function(config){
+    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}
+    var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;
+    for(s.src=config.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.queue=[],i=["trackEvent","trackPageView","trackException","trackMetric","trackDependency","trackTrace","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"],f=0;f<i.length;f++)r(i[f]);
+    if(!config.disableExceptionTracking){r("onerror");var o=e.onerror;e.onerror=function(message,url,line,column,error){var handled=o&&o(message,url,line,column,error);return handled!==!0&&t["trackException"]({exception:error})}}
+    return t
+  }({
+    instrumentationKey:"InstrumentationKey=bf658d8b-9b0d-4f5a-8723-886bf27477e9;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=fbf5b7af-314d-4da6-a19f-3cb26a2a6cd0"
+  });
+  window.appInsights=appInsights;
+  appInsights.trackPageView();
+ <a href="teams.html" onclick="appInsights.trackEvent({name:'UserClickedTeams'});">Teams</a>
+
 </script>
