@@ -6,7 +6,7 @@
     if(!config.disableExceptionTracking){r("onerror");var o=e.onerror;e.onerror=function(message,url,line,column,error){var handled=o&&o(message,url,line,column,error);return handled!==!0&&t["trackException"]({exception:error})}}
     return t
   }({
-    instrumentationKey:"94457f19-a7c8-42cf-8c41-263f27114faf"
+    connectionString: "InstrumentationKey=94457f19-a7c8-42cf-8c41-263f27114faf;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=317b0f5e-83dd-44d0-8fe2-90c9205e5e8a"
   });
   window.appInsights=appInsights;
   appInsights.trackPageView();
