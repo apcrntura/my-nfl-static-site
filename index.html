@@ -6,10 +6,10 @@
     if(!config.disableExceptionTracking){r("onerror");var o=e.onerror;e.onerror=function(message,url,line,column,error){var handled=o&&o(message,url,line,column,error);return handled!==!0&&t["trackException"]({exception:error})}}
     return t
   }({
-    instrumentationKey:"InstrumentationKey=bf658d8b-9b0d-4f5a-8723-886bf27477e9;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=fbf5b7af-314d-4da6-a19f-3cb26a2a6cd0"
+    instrumentationKey:"94457f19-a7c8-42cf-8c41-263f27114faf"
   });
   window.appInsights=appInsights;
   appInsights.trackPageView();
- <a href="teams.html" onclick="appInsights.trackEvent({name:'UserClickedTeams'});">Teams</a>
-
 </script>
+
+<a href="teams.html" onclick="appInsights.trackEvent({name:'UserClickedTeams'});">Teams</a>
