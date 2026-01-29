@@ -2,32 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFL International | Teams</title>
+
     <script type="text/javascript">
       var appInsights=window.appInsights||function(config){
         function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}
         var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;
-        for(s.src=config.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.queue=[],i=["trackEvent","trackPageView","trackException","trackMetric","trackDependency","trackTrace","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"],f=0;f<i.length;f++)r(i[f]);
-        if(!config.disableExceptionTracking){r("onerror");var o=e.onerror;e.onerror=function(message,url,line,column,error){var handled=o&&o(message,url,line,column,error);return handled!==!0&&t["trackException"]({exception:error})}}
+        s.src=config.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.queue=[],i=["trackEvent","trackPageView","trackException","trackMetric","trackDependency","trackTrace","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"],f=0;f<i.length;f++)r(i[f]);
         return t
       }({
-        connectionString: "InstrumentationKey=94457f19-a7c8-42cf-8c41-263f27114faf;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=317b0f5e-83dd-44d0-8fe2-90c9205e5e8a"
+        connectionString: "InstrumentationKey=94457f19-a7c8-42cf-8c41-263f27114faf;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;"
       });
       window.appInsights=appInsights;
       appInsights.trackPageView();
     </script>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #013369; color: white; text-align: center; padding: 50px; }
-        .card { background: white; color: #333; padding: 20px; border-radius: 8px; display: inline-block; }
-        a { color: #d50a0a; font-weight: bold; text-decoration: none; }
-    </style>
 </head>
 <body>
-    <div class="card">
-        <h1>NFL International Clone</h1>
-        <p>Analytics are currently tracking this page view in East Asia.</p>
-        <a href="../index.html">← Return to Main Site</a>
-    </div>
-</body>
+    <a href="#" onclick="appInsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Dallas Cowboys'}});">
+        <span>Dallas Cowboys</span>
+    </a>
+
+    <a href="#" onclick="appInsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Kansas City Chiefs'}});">
+        <span>Kansas City Chiefs</span>
+    </a>
+
+    </body>
 </html>
